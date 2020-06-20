@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>HOW ARE YOU</h1>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">Tip Calculator</h2>
+      <div class="inputs">
+        <ul class="list">
+          <li>Amount Of Bill: <input type="number" class="billAmount" /></li>
+          <li>Tip Percent: <input type="number" class="tipPercent" /></li>
+        </ul>
+      </div>
+      <button class="buttons" id="calculateButton">Calculate</button>
+      <div class="output">
+        <ul class="list">
+          <li id="tip">Tip Amount: <span class="tipAmount">0.00</span></li>
+          <li id="total">
+            Total Amount: <span class="totalAmount">0.00</span>
+          </li>
+        </ul>
+      </div>
+      <button class="buttons" id="resetButton">Reset</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
